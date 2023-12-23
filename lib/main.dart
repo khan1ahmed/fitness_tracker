@@ -40,6 +40,7 @@
 // }
 
 
+import 'package:fitness_tracker/Screens/Signinscreen.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 
@@ -153,7 +154,10 @@ class _MyAppState extends State<MyApp> {
                       ? TextStyle(fontSize: 30)
                       : TextStyle(fontSize: 20, color: Colors.red),
                 ),
-              )
+              ),
+              //extra for next page from me.asfand
+              ElevatedButton(onPressed: (){ Navigator.push(context,
+      MaterialPageRoute(builder: (context)=>Signinscreen()));}, child: Text('data')),
             ],
           ),
         ),
